@@ -127,5 +127,8 @@
       }
     }
   },
-  "defaultProject": "Frond-end"
+  "defaultProject": "Frond-end",
+  "cli": {
+    "analytics": false
+  }
 }
