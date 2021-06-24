@@ -9,7 +9,5 @@ import { ToastrService } from 'ngx-toastr';
 export class AppComponent {
  
   constructor(private toastr: ToastrService){}
-  onClick(){
-    this.toastr.success('hello world','toastr fun')
-  }
+ 
 }

@@ -1,0 +1,75 @@
+<header>
+    <div class="top-header">
+        <ul class="header-links">
+            <li><a href="#"> <i class="fa fa-phone"></i> +021-95-51-84</a></li>
+            <li><a href="#"><i class="fa fa-envelope"></i> email@email.com</a></li>
+            <li><a href="#"><i class="fa fa-map-marker"></i> HCM city</a></li>
+        </ul>
+        <ul sclass="header-links">
+            <li><a href=""><i class="fa fa-user"></i> My account</a></li>
+        </ul>
+    </div>
+
+    <!-- Main header-->
+    <div class="header">
+
+        <div nz-row nzJustify="space-between" nzAlign="middle">
+            <div nz-col nzSpan="8" [nzPush]="1">
+                <a href=""><img src="../../../../assets/imgs/logo.png" alt="image"></a>
+
+            </div>
+
+
+            <div nz-col nzSpan="8" >
+                <nz-input-group nzCompact>
+                    <select class="header-select">
+                        <option value="0">All catagory</option>
+                        <option value="1"> catagory 1</option>
+                    </select>
+                    <input type="text" nz-input placeholder="search here" style="width: 200px;" />
+                    <button class="btn-search" nz-button nzType="primary" nzSize="large" nzSearch>Search</button>
+                </nz-input-group>
+            </div>
+
+
+            <div nz-col nzSpan="8" [nzPush]="4" > 
+                <a nz-dropdown nzTrigger="hover" [nzDropdownMenu]="menu" nzPlacement="bottomLeft">
+                    <nz-badge [nzCount]="5">
+                        <i class="fa fa-shopping-cart icon-cart"></i>
+                    </nz-badge>
+                    <span class="text-cart">Your cart</span>
+                </a>
+                <nz-dropdown-menu #menu="nzDropdownMenu">
+                    <ul nz-menu>
+                        <li nz-menu-item>1st menu item</li>
+                        <li nz-menu-item>2nd menu item</li>
+                        <hr>
+                        <li nz-menu-item>
+                            <button class="check" nz-button nzType="primary">check</button>
+                            <button nz-button nzType="danger">check</button>
+                        </li>
+                    </ul>
+
+                </nz-dropdown-menu>
+            </div>
+        </div>
+
+
+
+        
+    </div>
+
+</header>
+
+<!-- NAVIGATION -->
+<div class="nav-bar">
+    <div>
+        <ul>
+            <li class="active"><a routerLink="">Home</a></li>
+            <li><a href="#">Hot Deals</a></li>
+            <li><a href="#">Categories</a></li>
+            <li><a href="#">Contact Us</a></li>
+
+        </ul>
+    </div>
+</div>

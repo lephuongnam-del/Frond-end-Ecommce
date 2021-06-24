@@ -1,10 +1,12 @@
 import { CommonModule } from "@angular/common";
 import { NgModule } from "@angular/core";
+import { SharedModule } from "../shared/shared.module";
+import { HomePageComponent } from './home-page/home-page.component';
 
 @NgModule({
-    declarations:[],
-    imports:[CommonModule],
-    exports:[],
+    declarations:[HomePageComponent],
+    imports:[CommonModule,SharedModule],
+    exports:[HomePageComponent],
     providers:[]
 })
 
